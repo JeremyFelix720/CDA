@@ -10,55 +10,442 @@
     <section id="left_column">
         <h3>Essentiels</h3>
         <ul>
+            <li><a href="#a">&lt;a&gt;</a></li>
+            <li><a href="#div">&lt;div&gt;</a></li>
             <li><a href="#hn">&lt;hn&gt;</a></li>
-            <li><a href="#a">a</a></li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
+            <li><a href="#li">&lt;li&gt;</a></li>
+            <li>&lt;nav&gt;</li>
+            <li>&lt;ol&gt;</li>
+            <li><a href="#p">&lt;p&gt;</a></li>
+            <li>&lt;span&gt;</li>
+            <li>&lt;strong&gt;</li>
+            <li>&lt;ul&gt;</li>
         </ul>
         <h3>Media</h3>
         <ul>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
+            <li><a href="#button">&lt;button&gt;</a></li>
+            <li>&lt;img&gt;</li>
+            <li>&lt;video&gt;</li>
+            <li>&lt;audio&gt;</li>
+            <li>&lt;form&gt;</li>
+            <li>&lt;label&gt;</li>
         </ul>
         <h3>Tableaux</h3>
         <ul>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
+            <li>&lt;table&gt;</li>
+            <li>&lt;tbody&gt;</li>
+            <li>&lt;td&gt;</li>
+            <li>&lt;tfoot&gt;</li>
+            <li>&lt;th&gt;</li>
+            <li>&lt;thead&gt;</li>
+            <li>&lt;tr&gt;</li>
         </ul>
         <h3>Tous</h3>
         <ul>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
-            <li>Label</li>
+            <li>&lt;iframe&gt;</li>
+            <li>&lt;label&gt;</li>
         </ul>
     </section>
     <section id="right_column">
         <h1>Fiche technique HTML</h1>
 
+        <article id="a">
+            <h2>&lt;a&gt;</h2>
+            <p>Element de type inline qui contient un lien hypertexte vers des pages Web internes ou externes, des fichiers, des adresses e-mail, des emplacements dans la même page, etc.</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>href</td>
+                        <td>URL vers laquelle pointe le lien hypertexte.</td>
+                        <td>Hyperliens</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <a href="wikipedia.org">Wikipédia</a>
+                </div>
+                <div>
+                    <p>&lt;a href="wikipedia.org"&gt;Wikipédia&lt;/a&gt;</p>
+                </div>
+            </div>
+        </article>
+
+        <article id="div">
+            <h2>&lt;div&gt;</h2>
+            <p>Element neutre de type bloc qui a pour but de contenir d'autres balises</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Masque l'élément aux visiteurs.</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <div style="border:2px solid green;">
+                        <p>Un premier paragraphe</p>
+                        <div style="border:2px solid red;">
+                            <p>Un autre paragraphe</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>&lt;div style="border:2px solid green;"&gt;</p>
+                    <p>&emsp; &lt;p&gt;Un premier paragraphe&lt;/p&gt;</p>
+                    <p>&emsp; &lt;div style="border:2px solid red;"&gt;</p>
+                    <p>&emsp; &emsp; &lt;p&gt;Un autre paragraphe&lt;/p&gt;</p>
+                    <p>&emsp; &lt;/div&gt;</p>
+                    <p>&lt;/div&gt;</p>
+                </div>
+            </div>
+        </article>
+
         <article id="hn">
             <h2>&lt;hn&gt;</h2>
-            <p>Les éléments &lt;h1&gt; à &lt;h6&gt; représentent six niveaux d’en-têtes de section.</p>
+            <p>Les éléments &lt;h1&gt; à &lt;h6&gt; de type bloc représentent six niveaux d’en-têtes de section.</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Masque l'élément aux visiteurs.</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <h1>Titre de niveau 1</h1>
+                    <h2>Titre de niveau 2</h2>
+                    <h3>Titre de niveau 3</h3>
+                    <h4>Titre de niveau 4</h4>
+                    <h5>Titre de niveau 5</h5>
+                    <h6>Titre de niveau 6</h6>
+                </div>
+                <div>
+                    <p>&lt;h1&gt;Titre de niveau 1&lt;/h1&gt;</p>
+                    <p>&lt;h2&gt;Titre de niveau 2&lt;/h2&gt;</p>
+                    <p>&lt;h3&gt;Titre de niveau 3&lt;/h3&gt;</p>
+                    <p>&lt;h4&gt;Titre de niveau 4&lt;/h4&gt;</p>
+                    <p>&lt;h5&gt;Titre de niveau 5&lt;/h5&gt;</p>
+                    <p>&lt;h6&gt;Titre de niveau 6&lt;/h6&gt;</p>
+                </div>
+            </div>
+        </article>
+=
+        <article id="li">
+            <h2>&lt;li&gt;</h2>
+            <p>Element de type bloc qui indique un élément d'une liste &lt;ul&gt; ou &lt;ol&gt;</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Masque l'élément aux visiteurs.</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <ul>
+                        <li>Premier élément</li>
+                        <li>Deuxième élément</li>
+                        <li>Troisième élément</li>
+                    </ul>
+                </div>
+                <div>
+                    &lt;ul&gt;
+                    &emsp; &lt;li&gt;Premier élément&lt;/li&gt;
+                    &emsp; &lt;li&gt;Deuxième élément&lt;/li&gt;
+                    &emsp; &lt;li&gt;Troisième élément&lt;/li&gt;
+                    &lt;/ul&gt;
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <article id="p">
+            <h2>&lt;p&gt;</h2>
+            <p>Element de type bloc qui contient un paragraphe de texte.</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <p>Premier paragraphe</p>
+                    <p>Deuxième paragraphe</p>
+                </div>
+                <div>
+                    <p>&lt;p&gt;Premier paragraphe&lt;/p&gt;</p>
+                    <p>&lt;p&gt;Deuxième paragraphe&lt;/p&gt;</p>
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <article id="img">
+            <h2>&lt;p&gt;</h2>
+            <p>Element de type bloc qui contient une image.</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <img src="images/example_image.jpeg" alt="Image d'exemple">
+                </div>
+                <div>
+                    <p>&lt;img src="images/example_image.jpeg" alt="Image d'exemple"&gt;&lt;/p&gt;
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <article id="button">
+            <h2>&lt;button&gt;</h2>
+            <p>Element ??? qui indique un bouton cliquable, utilisé pour soumettre des formulaires ou acceder à une fonctionnalité</p>
             <h3>Attributs</h3>
             <table>
                 <thead>
@@ -117,97 +504,7 @@
             </div>
         </article>
 
-        <article id="a">
-            <h2>&lt;a&gt;</h2>
-            <p>Lien hypertexte vers des pages Web internes ou externes, des fichiers, des adresses e-mail, des emplacements dans la même page, etc.</p>
-            <h3>Attributs</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nom</th>
-                        <th>Description</th>
-                        <th>Valeurs (Exemple)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>class</td>
-                        <td>Sélecteur multiple dans la page.</td>
-                        <td>Chaine de caractères</td>
-                    </tr>
-                    <tr>
-                        <td>id</td>
-                        <td>Sélecteur unique dans la page.</td>
-                        <td>Chaine de caractères</td>
-                    </tr>
-                    <tr>
-                        <td>style</td>
-                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
-                        <td>Code CSS</td>
-                    </tr>
-                    <tr>
-                        <td>title</td>
-                        <td>Titre descriptif de l’élément.</td>
-                        <td>Chaine de caractères</td>
-                    </tr>
-                    <tr>
-                        <td>href</td>
-                        <td>URL vers laquelle pointe le lien hypertexte.</td>
-                        <td>Hyperliens</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3>Exemple</h3>
-            <div class="preview_and_code_blocks">
-                <div>
-                    <a href="wikipedia.org">Wikipédia</a>
-                </div>
-                <div>
-                    <p>&lt;a href="wikipedia.org"&gt;Wikipédia&lt;/a&gt;</p>
-                </div>
-            </div>
-        </article>
 
-        <article>
-            <h2>&lt;balise&gt;</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h3>Attributs</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nom</th>
-                        <th>Description</th>
-                        <th>Valeurs (Exemple)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Label</td>
-                        <td>Label</td>
-                        <td>Label</td>
-                    </tr>
-                    <tr>
-                        <td>Label</td>
-                        <td>Label</td>
-                        <td>Label</td>
-                    </tr>
-                    <tr>
-                        <td>Label</td>
-                        <td>Label</td>
-                        <td>Label</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3>Exemple</h3>
-            <div class="preview_and_code_blocks">
-                <div>
-                    <img src="images/example_image.jpeg" alt="Image d'exemple">
-                </div>
-                <div>
-                    <p>&lt;img src="images/example_image.jpeg" alt="Image d'exemple"&gt;&lt;/p&gt;
-                </div>
-            </div>
-        </article>
 
     </section>
 
