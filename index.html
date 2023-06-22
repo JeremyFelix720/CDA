@@ -11,7 +11,7 @@
         <h3>Essentiels</h3>
         <ul>
             <li><a href="#hn">&lt;hn&gt;</a></li>
-            <li>Label</li>
+            <li><a href="#a">a</a></li>
             <li>Label</li>
             <li>Label</li>
             <li>Label</li>
@@ -99,17 +99,27 @@
             <h3>Exemple</h3>
             <div class="preview_and_code_blocks">
                 <div>
-                    <img src="images/example_image.jpeg" alt="Image d'exemple">
+                    <h1>Titre de niveau 1</h1>
+                    <h2>Titre de niveau 2</h2>
+                    <h3>Titre de niveau 3</h3>
+                    <h4>Titre de niveau 4</h4>
+                    <h5>Titre de niveau 5</h5>
+                    <h6>Titre de niveau 6</h6>
                 </div>
                 <div>
-                    <p>&lt;img src="images/example_image.jpeg" alt="Image d'exemple"&gt;&lt;/p&gt;
+                    <p>&lt;h1&gt;Titre de niveau 1&lt;/h1&gt;</p>
+                    <p>&lt;h2&gt;Titre de niveau 2&lt;/h2&gt;</p>
+                    <p>&lt;h3&gt;Titre de niveau 3&lt;/h3&gt;</p>
+                    <p>&lt;h4&gt;Titre de niveau 4&lt;/h4&gt;</p>
+                    <p>&lt;h5&gt;Titre de niveau 5&lt;/h5&gt;</p>
+                    <p>&lt;h6&gt;Titre de niveau 6&lt;/h6&gt;</p>
                 </div>
             </div>
         </article>
 
-        <article>
-            <h2>&lt;balise&gt;</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <article id="a">
+            <h2>&lt;a&gt;</h2>
+            <p>Lien hypertexte vers des pages Web internes ou externes, des fichiers, des adresses e-mail, des emplacements dans la même page, etc.</p>
             <h3>Attributs</h3>
             <table>
                 <thead>
@@ -121,29 +131,39 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Label</td>
-                        <td>Label</td>
-                        <td>Label</td>
+                        <td>class</td>
+                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
                     </tr>
                     <tr>
-                        <td>Label</td>
-                        <td>Label</td>
-                        <td>Label</td>
+                        <td>id</td>
+                        <td>Sélecteur unique dans la page.</td>
+                        <td>Chaine de caractères</td>
                     </tr>
                     <tr>
-                        <td>Label</td>
-                        <td>Label</td>
-                        <td>Label</td>
+                        <td>style</td>
+                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>href</td>
+                        <td>URL vers laquelle pointe le lien hypertexte.</td>
+                        <td>Hyperliens</td>
                     </tr>
                 </tbody>
             </table>
             <h3>Exemple</h3>
             <div class="preview_and_code_blocks">
                 <div>
-                    <img src="images/example_image.jpeg" alt="Image d'exemple">
+                    <a href="wikipedia.org">Wikipédia</a>
                 </div>
                 <div>
-                    <p>&lt;img src="images/example_image.jpeg" alt="Image d'exemple"&gt;&lt;/p&gt;
+                    <p>&lt;a href="wikipedia.org"&gt;Wikipédia&lt;/a&gt;</p>
                 </div>
             </div>
         </article>
