@@ -14,8 +14,8 @@
             <li><a href="#div">&lt;div&gt;</a></li>
             <li><a href="#hn">&lt;hn&gt;</a></li>
             <li><a href="#li">&lt;li&gt;</a></li>
-            <li>&lt;nav&gt;</li>
-            <li>&lt;ol&gt;</li>
+            <li><a href="#nav">&lt;nav&gt;</a></li>
+            <li><a href="#ol">&lt;ol&gt;</a></li>
             <li><a href="#p">&lt;p&gt;</a></li>
             <li>&lt;span&gt;</li>
             <li>&lt;strong&gt;</li>
@@ -64,17 +64,17 @@
                 <tbody>
                     <tr>
                         <td>class</td>
-                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Sélecteur CSS multiple dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>id</td>
-                        <td>Sélecteur unique dans la page.</td>
+                        <td>Sélecteur CSS unique dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>style</td>
-                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Applique un style CSS directement à l'élément (par exemple, dans le cadre d'un test).</td>
                         <td>Code CSS</td>
                     </tr>
                     <tr>
@@ -176,17 +176,17 @@
                 <tbody>
                     <tr>
                         <td>class</td>
-                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Sélecteur CSS multiple dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>id</td>
-                        <td>Sélecteur unique dans la page.</td>
+                        <td>Sélecteur CSS unique dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>style</td>
-                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Applique un style CSS directement à l'élément (par exemple, dans le cadre d'un test).</td>
                         <td>Code CSS</td>
                     </tr>
                     <tr>
@@ -237,17 +237,17 @@
                 <tbody>
                     <tr>
                         <td>class</td>
-                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Sélecteur CSS multiple dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>id</td>
-                        <td>Sélecteur unique dans la page.</td>
+                        <td>Sélecteur CSS unique dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>style</td>
-                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Applique un style CSS directement à l'élément (par exemple, dans le cadre d'un test).</td>
                         <td>Code CSS</td>
                     </tr>
                     <tr>
@@ -272,21 +272,77 @@
                     </ul>
                 </div>
                 <div>
-                    &lt;ul&gt;
-                    &emsp; &lt;li&gt;Premier élément&lt;/li&gt;
-                    &emsp; &lt;li&gt;Deuxième élément&lt;/li&gt;
-                    &emsp; &lt;li&gt;Troisième élément&lt;/li&gt;
+                    <p>
+                    &lt;ul&gt;<br>
+                    &emsp; &lt;li&gt;Premier élément&lt;/li&gt;<br>
+                    &emsp; &lt;li&gt;Deuxième élément&lt;/li&gt;<br>
+                    &emsp; &lt;li&gt;Troisième élément&lt;/li&gt;<br>
                     &lt;/ul&gt;
+                    </p>
                 </div>
             </div>
         </article>
 
-
-
-
-
-
-
+        <article id="nav">
+            <h2>&lt;nav&gt;</h2>
+            <p>Section d’une page dont le but est de fournir des liens de navigation, soit dans le document actif, soit vers d’autres documents.</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur CSS multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur CSS unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style CSS directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Masque l'élément aux visiteurs.</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <nav style="display:flex; justify-content:space-around; background-color:lightgray; padding:10px;">
+                        <a href="#">Lien 1</a>
+                        <a href="#">Lien 2</a>
+                        <a href="#">Lien 3</a>
+                    </nav>
+                </div>
+                <div>
+                    <p>
+                    &lt;nav style="display:flex; justify-content:space-around; background-color:lightgray; padding:10px;"&gt;<br>
+                    &emsp; &lt;a href="#">Lien 1&lt;/a&gt;<br>
+                    &emsp; &lt;a href="#">Lien 2&lt;/a&gt;<br>
+                    &emsp; &lt;a href="#">Lien 3&lt;/a&gt;<br>
+                    &lt;/nav&gt;
+                    </p>
+                </div>
+            </div>
+        </article>
 
 
 
@@ -324,17 +380,17 @@
                 <tbody>
                     <tr>
                         <td>class</td>
-                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Sélecteur CSS multiple dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>id</td>
-                        <td>Sélecteur unique dans la page.</td>
+                        <td>Sélecteur CSS unique dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>style</td>
-                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Applique un style CSS directement à l'élément (par exemple, dans le cadre d'un test).</td>
                         <td>Code CSS</td>
                     </tr>
                     <tr>
@@ -373,7 +429,7 @@
 
 
         <article id="img">
-            <h2>&lt;p&gt;</h2>
+            <h2>&lt;img&gt;</h2>
             <p>Element de type bloc qui contient une image.</p>
             <h3>Attributs</h3>
             <table>
@@ -387,17 +443,17 @@
                 <tbody>
                     <tr>
                         <td>class</td>
-                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Sélecteur CSS multiple dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>id</td>
-                        <td>Sélecteur unique dans la page.</td>
+                        <td>Sélecteur CSS unique dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>style</td>
-                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Applique un style CSS directement à l'élément (par exemple, dans le cadre d'un test).</td>
                         <td>Code CSS</td>
                     </tr>
                     <tr>
@@ -458,17 +514,17 @@
                 <tbody>
                     <tr>
                         <td>class</td>
-                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Sélecteur CSS multiple dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>id</td>
-                        <td>Sélecteur unique dans la page.</td>
+                        <td>Sélecteur CSS unique dans la page.</td>
                         <td>Chaine de caractères</td>
                     </tr>
                     <tr>
                         <td>style</td>
-                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Applique un style CSS directement à l'élément (par exemple, dans le cadre d'un test).</td>
                         <td>Code CSS</td>
                     </tr>
                     <tr>

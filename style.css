@@ -5,11 +5,11 @@ body {
     flex-direction: row;
 }
 
-p, ul, h1, h2, h3, table {
+p, ul, h1, h2, h3, a, table {
     font-family: Tahoma, sans-serif;
 }
 
-p, ul {
+p, ul, a {
     font-size: 14px;
     margin: 0px;
 }
