@@ -24,15 +24,14 @@
         <h3>Media</h3>
         <ul>
             <li><a href="#button">&lt;button&gt;</a></li>
-            <li>&lt;img&gt;</li>
+            <li><a href="#img">&lt;img&gt;</a></li>
             <li>&lt;video&gt;</li>
             <li>&lt;audio&gt;</li>
             <li>&lt;form&gt;</li>
-            <li>&lt;label&gt;</li>
         </ul>
         <h3>Tableaux</h3>
         <ul>
-            <li>&lt;table&gt;</li>
+            <li><a href="#table">&lt;table&gt;</a></li>
             <li>&lt;tbody&gt;</li>
             <li>&lt;td&gt;</li>
             <li>&lt;tfoot&gt;</li>
@@ -102,7 +101,7 @@
 
         <article id="div">
             <h2>&lt;div&gt;</h2>
-            <p>Element sémantiquement neutre de type bloc qui a pour but de contenir d'autres balises</p>
+            <p>Element sémantiquement neutre de type bloc qui a pour but de contenir d'autres balises.</p>
             <h3>Attributs</h3>
             <table>
                 <thead>
@@ -224,7 +223,7 @@
 =
         <article id="li">
             <h2>&lt;li&gt;</h2>
-            <p>Element de type bloc qui indique un élément d'une liste &lt;ul&gt; ou &lt;ol&gt;</p>
+            <p>Element de type bloc qui indique un élément d'une liste &lt;ul&gt; ou &lt;ol&gt;.</p>
             <h3>Attributs</h3>
             <table>
                 <thead>
@@ -346,7 +345,7 @@
 
         <article id="ol">
             <h2>&lt;ol&gt;</h2>
-            <p>Element de type bloc qui indique une liste d'éléments ordonnés</p>
+            <p>Element de type bloc qui indique une liste d'éléments ordonnés.</p>
             <h3>Attributs</h3>
             <table>
                 <thead>
@@ -557,7 +556,7 @@
 
         <article id="ul">
             <h2>&lt;ul&gt;</h2>
-            <p>Element de type bloc qui indique une liste d'éléments non ordonnés</p>
+            <p>Element de type bloc qui indique une liste d'éléments non ordonnés.</p>
             <h3>Attributs</h3>
             <table>
                 <thead>
@@ -616,20 +615,6 @@
             </div>
         </article>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <article id="img">
             <h2>&lt;img&gt;</h2>
             <p>Element de type bloc qui contient une image.</p>
@@ -681,34 +666,9 @@
             </div>
         </article>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <article id="button">
             <h2>&lt;button&gt;</h2>
-            <p>Element de type inline qui indique un bouton cliquable, utilisé pour soumettre des formulaires ou acceder à une fonctionnalité</p>
+            <p>Element de type inline qui indique un bouton cliquable, utilisé pour soumettre des formulaires ou acceder à une fonctionnalité.</p>
             <h3>Attributs</h3>
             <table>
                 <thead>
@@ -754,9 +714,6 @@
                         <td>Nom du bouton.</td>
                         <td>Chaine de caractères</td>
                     </tr>
-
-                    form
-                    formtarget
                 </tbody>
             </table>
             <h3>Exemple</h3>
@@ -772,10 +729,92 @@
             </div>
         </article>
 
-
-
+        <article id="table">
+            <h2>&lt;table&gt;</h2>
+            <p>Element de type bloc qui contient des informations présentées dans un tableau bidimensionnel composé de lignes et de colonne.</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Masque l'élément aux visiteurs.</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Titre de colonne 1</th>
+                                <th>Titre de colonne 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>cellule 1</td>
+                                <td>cellule 2</td>
+                            </tr>
+                            <tr>
+                                <td>cellule 3</td>
+                                <td>cellule 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <p>
+                        &lt;table&gt;<br>
+                        &emsp; &lt;thead&gt;<br>
+                        &emsp; &emsp; &lt;tr&gt;<br>
+                        &emsp; &emsp; &emsp; &lt;th&gt;Titre de colonne 1&lt;/th&gt;<br>
+                        &emsp; &emsp; &emsp; &lt;th&gt;Titre de colonne 2&lt;/th&gt;<br>
+                        &emsp; &emsp; &lt;/tr&gt;<br>
+                        &emsp; &lt;/thead&gt;<br>
+                        &emsp; &lt;tbody&gt;<br>
+                        &emsp; &emsp; &lt;tr&gt;<br>
+                        &emsp; &emsp; &emsp;&lt;td&gt;cellule 1&lt;/td&gt;<br>
+                        &emsp; &emsp; &emsp;&lt;td&gt;cellule 2&lt;/td&gt;<br>
+                        &emsp; &emsp;&lt;/tr&gt;<br>
+                        &emsp; &emsp;&lt;tr&gt;<br>
+                        &emsp; &emsp; &emsp;&lt;td&gt;cellule 3&lt;/td&gt;<br>
+                        &emsp; &emsp; &emsp;&lt;td&gt;cellule 4&lt;/td&gt;<br>
+                        &emsp; &emsp;&lt;/tr&gt;<br>
+                        &emsp;&lt;/tbody&gt;<br>
+                        &lt;/table&gt;
+                    </p>
+                </div>
+            </div>
+        </article>
     </section>
-
-
 </body>
 </html>
