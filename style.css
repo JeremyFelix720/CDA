@@ -5,7 +5,7 @@ body {
     flex-direction: row;
 }
 
-p, ul, h1, h2, h3, a, table {
+p, ul, h1, h2, h3, h4, h5, h6, a, table {
     font-family: Tahoma, sans-serif;
 }
 
@@ -50,7 +50,7 @@ h3 {
     padding: 20px;
 }
 
-ul li {
+#left_column ul li {
     list-style-type: none;
 
 }

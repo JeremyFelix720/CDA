@@ -17,9 +17,9 @@
             <li><a href="#nav">&lt;nav&gt;</a></li>
             <li><a href="#ol">&lt;ol&gt;</a></li>
             <li><a href="#p">&lt;p&gt;</a></li>
-            <li>&lt;span&gt;</li>
+            <li><a href="#span">&lt;span&gt;</a></li>
             <li>&lt;strong&gt;</li>
-            <li>&lt;ul&gt;</li>
+            <li><a href="#ul">&lt;ul&gt;</a></li>
         </ul>
         <h3>Media</h3>
         <ul>
@@ -102,7 +102,7 @@
 
         <article id="div">
             <h2>&lt;div&gt;</h2>
-            <p>Element neutre de type bloc qui a pour but de contenir d'autres balises</p>
+            <p>Element sémantiquement neutre de type bloc qui a pour but de contenir d'autres balises</p>
             <h3>Attributs</h3>
             <table>
                 <thead>
@@ -344,26 +344,66 @@
             </div>
         </article>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <article id="ol">
+            <h2>&lt;ol&gt;</h2>
+            <p>Element de type bloc qui indique une liste d'éléments ordonnés</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur CSS multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur CSS unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style CSS directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Masque l'élément aux visiteurs.</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <ol>
+                        <li>Premier élément</li>
+                        <li>Deuxième élément</li>
+                        <li>Troisième élément</li>
+                    </ol>
+                </div>
+                <div>
+                    <p>
+                    &lt;ol&gt;<br>
+                    &emsp; &lt;li&gt;Premier élément&lt;/li&gt;<br>
+                    &emsp; &lt;li&gt;Deuxième élément&lt;/li&gt;<br>
+                    &emsp; &lt;li&gt;Troisième élément&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                    </p>
+                </div>
+            </div>
+        </article>
 
         <article id="p">
             <h2>&lt;p&gt;</h2>
@@ -413,6 +453,142 @@
             </div>
         </article>
 
+        <article id="span">
+            <h2>&lt;span&gt;</h2>
+            <p>Element sémantiquement neutre de type inline qui a pour but de contenir des fragments de paragraphes (pour les selectionner et les styliser avec du code CSS).</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Masque l'élément aux visiteurs.</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <p>Paragraphe avec un <span style="font-weight:bold; text-decoration:underline;">groupe de mots</span> selectionnés</p>
+                </div>
+                <div>
+                    <p>&lt;p&gt;Paragraphe avec un &lt;span style="font-weight:bold; text-decoration:underline;"&gt;groupe de mots&lt;/span&gt; selectionnés&lt;/p&gt;</p>
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <article id="ul">
+            <h2>&lt;ul&gt;</h2>
+            <p>Element de type bloc qui indique une liste d'éléments non ordonnés</p>
+            <h3>Attributs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Valeurs (Exemple)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>Sélecteur CSS multiple dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Sélecteur CSS unique dans la page.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Applique un style CSS directement à l'élément (par exemple, dans le cadre d'un test).</td>
+                        <td>Code CSS</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Titre descriptif de l’élément.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Masque l'élément aux visiteurs.</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Exemple</h3>
+            <div class="preview_and_code_blocks">
+                <div>
+                    <ul>
+                        <li>Premier élément</li>
+                        <li>Deuxième élément</li>
+                        <li>Troisième élément</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                    &lt;ul&gt;<br>
+                    &emsp; &lt;li&gt;Premier élément&lt;/li&gt;<br>
+                    &emsp; &lt;li&gt;Deuxième élément&lt;/li&gt;<br>
+                    &emsp; &lt;li&gt;Troisième élément&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                    </p>
+                </div>
+            </div>
+        </article>
 
 
 
@@ -460,6 +636,11 @@
                         <td>title</td>
                         <td>Titre descriptif de l’élément.</td>
                         <td>Chaine de caractères</td>
+                    </tr>
+                    <tr>
+                        <td>target</td>
+                        <td>Indique la façon dont la page ciblée s'ouvrira après avoir cliqué sur le lien</td>
+                        <td>"_self", "blank", "_parent", "_top", &lt;name&gt;"</td>
                     </tr>
                 </tbody>
             </table>
