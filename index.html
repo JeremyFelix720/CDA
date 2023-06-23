@@ -665,7 +665,7 @@
                     </tr>
                     <tr>
                         <td>target</td>
-                        <td>Indique la façon dont la page ciblée s'ouvrira après avoir cliqué sur le lien</td>
+                        <td>Indique l'endroit où la page ciblée s'ouvrira après avoir cliqué sur le lien</td>
                         <td>"_self", "blank", "_parent", "_top", &lt;name&gt;"</td>
                     </tr>
                 </tbody>
@@ -708,7 +708,7 @@
 
         <article id="button">
             <h2>&lt;button&gt;</h2>
-            <p>Element ??? qui indique un bouton cliquable, utilisé pour soumettre des formulaires ou acceder à une fonctionnalité</p>
+            <p>Element de type inline qui indique un bouton cliquable, utilisé pour soumettre des formulaires ou acceder à une fonctionnalité</p>
             <h3>Attributs</h3>
             <table>
                 <thead>
@@ -744,25 +744,30 @@
                         <td>Masque l'élément aux visiteurs.</td>
                         <td>/</td>
                     </tr>
+                    <tr>
+                        <td>formtarget</td>
+                        <td>Indique l'endroit où la réponse du formulaire s'ouvrira après avoir cliqué sur le bouton.</td>
+                        <td>"_self", "blank", "_parent", "_top", &lt;name&gt;"</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>Nom du bouton.</td>
+                        <td>Chaine de caractères</td>
+                    </tr>
+
+                    form
+                    formtarget
                 </tbody>
             </table>
             <h3>Exemple</h3>
             <div class="preview_and_code_blocks">
                 <div>
-                    <h1>Titre de niveau 1</h1>
-                    <h2>Titre de niveau 2</h2>
-                    <h3>Titre de niveau 3</h3>
-                    <h4>Titre de niveau 4</h4>
-                    <h5>Titre de niveau 5</h5>
-                    <h6>Titre de niveau 6</h6>
+                    <button type="button" style="padding: 5px; background-color:red;">Bouton cliquable</button>
                 </div>
                 <div>
-                    <p>&lt;h1&gt;Titre de niveau 1&lt;/h1&gt;</p>
-                    <p>&lt;h2&gt;Titre de niveau 2&lt;/h2&gt;</p>
-                    <p>&lt;h3&gt;Titre de niveau 3&lt;/h3&gt;</p>
-                    <p>&lt;h4&gt;Titre de niveau 4&lt;/h4&gt;</p>
-                    <p>&lt;h5&gt;Titre de niveau 5&lt;/h5&gt;</p>
-                    <p>&lt;h6&gt;Titre de niveau 6&lt;/h6&gt;</p>
+
+                    <p>&lt;button type="button" style="padding:5px; background-color:red;"&gt;Bouton cliquable&lt;/button&gt;</p>
+
                 </div>
             </div>
         </article>
